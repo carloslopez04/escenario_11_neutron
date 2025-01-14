@@ -23,15 +23,6 @@ class neurona:
     self.entrada = np.array(entrada)
     calculo = np.dot(self.peso,entrada) + self.sesgo
     return self.activacion(calculo)
-  
-#   def sigmoide(x):
-#     return 1 / (1 + np.exp(-x))
-
-#   def tangente_hiperbolica(x):
-#     return np.tanh(x)
-
-#   def relu(x):
-#     return np.maximum(0, x)
 
   def cambiosesgo(self,nsesgo):
     self.sesgo = nsesgo
